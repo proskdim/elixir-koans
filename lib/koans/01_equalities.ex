@@ -27,14 +27,14 @@ defmodule Equalities do
   end
 
   koan "Unless they actually are different" do
-    assert 3.2 != ___
+    assert 3.2 != 5
   end
 
   koan "Some may be looking for bigger things" do
-    assert ___ > 3
+    assert 5 > 3
   end
 
   koan "Others are happy with less" do
-    assert ___ < 3
+    assert 2 < 3
   end
 end
