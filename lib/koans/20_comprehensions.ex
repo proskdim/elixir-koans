@@ -18,7 +18,12 @@ defmodule Comprehensions do
   end
 
   koan "You can use multiple generators at once" do
-    assert for(x <- ["little", "big"], y <- ["dogs", "cats"], do: "#{x} #{y}") == ["little dogs", "little cats", "big dogs", "big cats"]
+    assert for(x <- ["little", "big"], y <- ["dogs", "cats"], do: "#{x} #{y}") == [
+             "little dogs",
+             "little cats",
+             "big dogs",
+             "big cats"
+           ]
   end
 
   koan "Use a filter to reduce your work" do
@@ -30,4 +35,3 @@ defmodule Comprehensions do
     assert collection == %{"Pecan" => "Pecan Pie", "Pumpkin" => "Pumpkin Pie"}
   end
 end
-

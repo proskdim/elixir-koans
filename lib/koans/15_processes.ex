@@ -175,7 +175,7 @@ defmodule Processes do
 
     Process.exit(pid, :random_reason)
 
-    assert_receive {:exited, :random_reason},100,"error"
+    assert_receive {:exited, :random_reason}, 100, "error"
   end
 
   koan "Parent processes can trap exits for children they are linked to" do

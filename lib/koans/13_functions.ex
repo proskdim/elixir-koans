@@ -61,7 +61,7 @@ defmodule Functions do
 
   koan "Little anonymous functions are common, and called with a dot" do
     multiply = fn a, b -> a * b end
-  assert multiply.(2, 3) == 6
+    assert multiply.(2, 3) == 6
   end
 
   koan "You can even go shorter, by using capture syntax `&()` and positional arguments" do
@@ -98,7 +98,7 @@ defmodule Functions do
 
   koan "The '&' operation is not needed for anonymous functions" do
     cube = fn number -> number * number * number end
-  assert times_five_and_then(2, cube) == 10**3
+    assert times_five_and_then(2, cube) == 10 ** 3
   end
 
   koan "The result of a function can be piped into another function as its first argument" do
